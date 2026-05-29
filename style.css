@@ -131,35 +131,28 @@ body{
 
 /* ACTION BUTTONS */
 
-.nav-actions{
-
-    display:flex;
-    align-items:center;
-
-    gap:15px;
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.search-btn,
-.menu-btn{
-    width:45px;
-    height:45px;
-    border:none;
-    border-radius:50%;
-    cursor:pointer;
-    background:#f5f5f5;
-    color:var(--color-primary);
-    font-size:16px;
-    transition:0.3s;
+.menu-btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #f5f5f5;
+    color: var(--color-primary);
+    font-size: 16px;
+    transition: 0.3s;
+    display: none; /* Keeps it hidden on desktop, shown on mobile */
 }
 
-.search-btn:hover,
-.menu-btn:hover{
-    background:var(--background-tertiary);
-    color:white;
-}
-
-.menu-btn{
-    display:none;
+.menu-btn:hover {
+    background: var(--background-tertiary);
+    color: white;
 }
 
 /* MOBILE MENU */
