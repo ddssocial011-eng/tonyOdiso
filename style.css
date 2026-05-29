@@ -55,60 +55,32 @@ body{
 }
 
 /* HEADER */
-
-.main-header{
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:999;
-}
-
-/* TOP BAR */
-
-.top-bar{
-    background:var(--background-secondary);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 7%;
-}
-
-.top-left,
-.top-right{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.top-link{
-    text-decoration:none;
-    color: var(--color-primary);
-    font-size:13px;
-    letter-spacing:1px;
-    transition:0.3s;
-}
-
-.top-link:hover{
-    color:var(--color-secondary);
-}
-
-.top-link.active{
-    color: var(--color-primary);
-    font-weight:600;
+.main-header {
+    width: 100%;
+    position: fixed; /* Kept fixed so it doesn't break your Hero layout */
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 /* NAVBAR */
-
-.navbar{
-    background:rgba(255,255,255,0.88);
-    backdrop-filter:blur(14px);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 7%;
-    border-bottom:1px solid rgba(0,0,0,0.06);
-    transition:0.4s;
+.navbar {
+    /* Upgraded Premium Glassmorphism Effect */
+    background: rgba(255, 255, 255, 0.70); /* Increased transparency for better blur */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); /* Safari support */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    
+    /* Adds a subtle reflection line common in premium UI */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+    /* Soft shadow to separate it from the content */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); 
+    
+    transition: 0.4s ease-in-out;
 }
 
 /* LOGO */
@@ -233,9 +205,6 @@ body{
     }
     .menu-btn{
         display:block;
-    }
-    .top-bar{
-        display:none;
     }
     .navbar{
         padding:20px 5%;
